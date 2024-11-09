@@ -66,7 +66,7 @@ const ContestPage = () => {
               icon: "🍀"
             }
           ].map((step, index) => (
-            <div key={index} className="bg-white rounded-xl p-8 transform hover:-translate-y-1">
+            <div key={index} className="bg-white rounded-xl p-8 transform">
               <div className="text-4xl mb-4">{step.icon}</div>
               <h3 className="text-xl font-semibold text-blue-800 mb-3">{step.title}</h3>
               <p className="text-gray-700">{step.content}</p>
