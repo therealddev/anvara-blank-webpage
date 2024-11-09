@@ -75,7 +75,7 @@ const ContestPage = () => {
 
           <div>
             <h3 className="font-bold">7. Notification of Winner</h3>
-            <p>The potential winner will be notified during the livestream and will also receive a follow-up email at the address provided in the typeform submission. The potential winner must respond to our contact within three (3) days to confirm eligibility and provide any requested information. Failure to respond within the specified time may result in disqualification, and an alternate winner may be selected.</p>
+            <p>The potential winner will be notified during the livestream and will also receive a follow-up email at the address provided in the google form submission. The potential winner must respond to our contact within three (3) days to confirm eligibility and provide any requested information. Failure to respond within the specified time may result in disqualification, and an alternate winner may be selected.</p>
           </div>
 
           <div>
@@ -100,7 +100,7 @@ const ContestPage = () => {
 
           <div>
             <h3 className="font-bold">12. Privacy</h3>
-            <p>Information collected from entrants is subject to Sponsor's Privacy Policy, which can be found at [Anvara's Privacy Policy URL].</p>
+            <p>Information collected from entrants is subject to Sponsor's Privacy Policy, which can be found at <a href="https://dashboard.anvara.io/privacy-policy" className="underline">Anvara's Privacy Policy</a>.</p>
           </div>
 
           <div>
