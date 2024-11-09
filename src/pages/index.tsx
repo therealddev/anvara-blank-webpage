@@ -21,14 +21,20 @@ const ContestPage = () => {
           {[
             {
               title: "1. Join Anvara",
-              content: "Sign up for Anvara at " + 
-                <a href="https://dashboard.anvara.io" 
-                   className="text-blue-600 hover:text-blue-800 underline transition-colors" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                  dashboard.anvara.io
-                </a> + 
-                ". It's 100% free, no strings attached! Purchasing an activation does not increase your chances of winning. You must work at an ad agency or on a growth/marketing team at a brand.",
+              content: (
+                <>
+                  Sign up for Anvara at{' '}
+                  <a
+                    href="https://dashboard.anvara.io"
+                    className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    dashboard.anvara.io
+                  </a>
+                  . It's 100% free, no strings attached! Purchasing an activation does not increase your chances of winning. You must work at an ad agency or on a growth/marketing team at a brand.
+                </>
+              ),
               icon: "🎯"
             },
             {
@@ -38,14 +44,20 @@ const ContestPage = () => {
             },
             {
               title: "3. Complete the Entry Form",
-              content: "Fill out this " + 
-                <a href="https://forms.gle/qgUHEV9G2wjXwxa96" 
-                   className="text-blue-600 hover:text-blue-800 underline transition-colors" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                  quick Google Form
-                </a> + 
-                " with your info so we can confirm your entry.",
+              content: (
+                <>
+                  Fill out this{' '}
+                  <a
+                    href="https://forms.gle/qgUHEV9G2wjXwxa96"
+                    className="text-blue-600 hover:text-blue-800 underline transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    quick Google Form
+                  </a>
+                  {' '}with your info so we can confirm your entry.
+                </>
+              ),
               icon: "📝"
             },
             {
