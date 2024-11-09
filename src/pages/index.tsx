@@ -1,71 +1,70 @@
-
 import React from 'react';
 
 const ContestPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      {/* Hero Section */}
-      <section className="max-w-4xl mx-auto px-4 py-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-          Win a Luxury Prize of Your Choice!
+    <div className="min-h-screen bg-gradient-to-b from-blue-100 via-blue-50 to-white">
+      {/* Hero Section - Added animation and improved styling */}
+      <section className="max-w-4xl mx-auto px-4 py-16 text-center animate-fade-in">
+        <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-8 leading-tight">
+          Win a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Luxury Prize</span> of Your Choice!
         </h1>
-        <p className="text-xl md:text-2xl text-blue-800 mb-8">
+        <p className="text-xl md:text-2xl text-blue-800 mb-8 max-w-3xl mx-auto leading-relaxed">
           Yes, this is real, and yes, it's happening! We're giving away your choice of a Rolex (no, not the cheap ones), 
           a Birkin bag, or a vacation to the destination of your dreams.
         </p>
       </section>
 
-      {/* How to Enter Section */}
-      <section className="max-w-4xl mx-auto px-4 py-8 bg-white rounded-lg shadow-lg mb-12">
-        <h2 className="text-3xl font-bold text-blue-900 mb-6">How Do I Enter?</h2>
-        <div className="space-y-6">
-          <div className="flex flex-col space-y-2">
-            <h3 className="text-xl font-semibold text-blue-800">1. Join Anvara</h3>
-            <p className="text-gray-700">
-              Sign up for Anvara at dashboard.anvara.io
-              <br />
-              It's 100% free, no strings attached! Purchasing an activation does not increase your chances of winning.
-              <br />
-              You must work at an ad agency or on a growth/marketing team at a brand.
-            </p>
-          </div>
-
-          <div className="flex flex-col space-y-2">
-            <h3 className="text-xl font-semibold text-blue-800">2. Call your Friends</h3>
-            <p className="text-gray-700">
-              Ask five of your friends or colleagues to sign up for Anvara. To qualify, your friends must work at an ad agency 
-              or on a growth/marketing team at a brand in a relevant role to Anvara. (They can't already have an account).
-            </p>
-          </div>
-
-          <div className="flex flex-col space-y-2">
-            <h3 className="text-xl font-semibold text-blue-800">3. Complete the Entry Form</h3>
-            <p className="text-gray-700">
-              Fill out this quick Google Form with your info so we can confirm your entry.
-            </p>
-          </div>
-
-          <div className="flex flex-col space-y-2">
-            <h3 className="text-xl font-semibold text-blue-800">4. Good Luck!</h3>
-            <p className="text-gray-700">
-              Cross Your Fingers, Knock on Wood, Wear your lucky socks, wish at 11:11, and steer clear of ladders.
-            </p>
-          </div>
+      {/* How to Enter Section - Added cards with hover effects */}
+      <section className="max-w-4xl mx-auto px-4 py-12">
+        <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center">How Do I Enter?</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          {[
+            {
+              title: "1. Join Anvara",
+              content: "Sign up for Anvara at dashboard.anvara.io. It's 100% free, no strings attached! Purchasing an activation does not increase your chances of winning. You must work at an ad agency or on a growth/marketing team at a brand.",
+              icon: "🎯"
+            },
+            {
+              title: "2. Call your Friends",
+              content: "Ask five of your friends or colleagues to sign up for Anvara. To qualify, your friends must work at an ad agency or on a growth/marketing team at a brand in a relevant role to Anvara. (They can't already have an account).",
+              icon: "👥"
+            },
+            {
+              title: "3. Complete the Entry Form",
+              content: "Fill out this quick Google Form with your info so we can confirm your entry.",
+              icon: "📝"
+            },
+            {
+              title: "4. Good Luck!",
+              content: "Cross Your Fingers, Knock on Wood, Wear your lucky socks, wish at 11:11, and steer clear of ladders.",
+              icon: "🍀"
+            }
+          ].map((step, index) => (
+            <div key={index} className="bg-white rounded-xl p-8 transform hover:-translate-y-1">
+              <div className="text-4xl mb-4">{step.icon}</div>
+              <h3 className="text-xl font-semibold text-blue-800 mb-3">{step.title}</h3>
+              <p className="text-gray-700">{step.content}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Important Dates */}
-      <section className="max-w-4xl mx-auto px-4 py-8 bg-blue-50 rounded-lg mb-12">
-        <h2 className="text-3xl font-bold text-blue-900 mb-6">Save the Date</h2>
-        <p className="text-xl text-blue-800">
-          Join us for our live LinkedIn winner announcement on 12/10/2024. We'll be revealing the lucky winner at 11:11AM ET.
-        </p>
+      {/* Important Dates - Added gradient background and improved styling */}
+      <section className="max-w-4xl mx-auto px-4 py-12 my-12">
+        <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl p-8 text-white text-center">
+          <h2 className="text-3xl font-bold mb-6">Save the Date</h2>
+          <p className="text-xl">
+            Join us for our live LinkedIn winner announcement on 12/10/2024.
+            <br />
+            We'll be revealing the lucky winner at <span className="font-bold">11:11AM ET</span>.
+          </p>
+        </div>
       </section>
 
-      {/* Official Rules */}
+      {/* Official Rules - Improved readability */}
       <section className="max-w-4xl mx-auto px-4 py-8 mb-12">
-        <h2 className="text-3xl font-bold text-blue-900 mb-6">Anvara Contest Official Rules</h2>
-        <div className="bg-white rounded-lg shadow-lg p-6 space-y-4">
+        <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">Anvara Contest Official Rules</h2>
+        <div className="bg-white rounded-xl shadow-lg p-8 space-y-6">
           <p className="font-bold text-lg">NO PURCHASE NECESSARY TO ENTER OR WIN. A PURCHASE DOES NOT INCREASE THE CHANCES OF WINNING.</p>
           
           <div className="space-y-6 text-gray-700">
@@ -151,11 +150,14 @@ const ContestPage = () => {
         </div>
       </section>
 
-      {/* Contact Information */}
-      <footer className="max-w-4xl mx-auto px-4 py-8 text-center border-t">
+      {/* Footer - Added gradient border */}
+      <footer className="max-w-4xl mx-auto px-4 py-8 text-center border-t border-gradient-to-r from-blue-500 to-purple-500">
         <h3 className="text-xl font-semibold text-blue-900 mb-4">Contact Information</h3>
         <p className="text-gray-700">
-          For any questions about the Contest, please contact: info@anvara.com
+          For any questions about the Contest, please contact:{' '}
+          <a href="mailto:info@anvara.com" className="text-blue-600 hover:text-blue-800 transition-colors">
+            info@anvara.com
+          </a>
         </p>
         <p className="mt-4 text-sm text-gray-600">
           This Contest is in no way sponsored, endorsed, administered by, or associated with LinkedIn or any other third-party platform.
