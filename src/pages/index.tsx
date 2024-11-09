@@ -100,7 +100,7 @@ const ContestPage = () => {
 
           <div>
             <h3 className="font-bold">12. Privacy</h3>
-            <p>Information collected from entrants is subject to Sponsor's Privacy Policy.</p>
+            <p>Information collected from entrants is subject to Sponsor's Privacy Policy, which can be found at [Anvara's Privacy Policy URL].</p>
           </div>
 
           <div>
