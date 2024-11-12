@@ -24,7 +24,10 @@ const ContestPage = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 p-8 max-w-4xl mx-auto text-black dark:text-white">
-      <h1 className="text-2xl font-bold mb-8 text-center">Win a Luxury Prize of Your Choice!</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">
+        Advertisers & Brand Marketers<br />
+        Win a Rolex or a Birkin
+      </h1>
       
       <div className="w-full flex justify-center mb-8 h-[400px]">
         <img 
