@@ -3,14 +3,13 @@ import React from 'react';
 const ContestPage = () => {
   const images = [
     "/assets/rolex.png",
-    "/assets/rolex2.png",
-    "/assets/rolex3.png",
-    "/assets/rolex4.png",
     "/assets/bag.png",
+    "/assets/rolex2.png",
     "/assets/bag2.png",
+    "/assets/rolex3.png",
     "/assets/bag3.png",
+    "/assets/rolex4.png",
     "/assets/bag4.png",
-    "/assets/bag5.png"
   ];
 
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -31,7 +30,7 @@ const ContestPage = () => {
         <img 
           src={images[currentIndex]}
           alt={images[currentIndex].includes('rolex') ? "Rolex Watch" : "Birkin Bag"}
-          className="max-w-[300px] h-[400px] object-contain"
+          className="h-[400px] object-contain p-4"
         />
       </div>
 
