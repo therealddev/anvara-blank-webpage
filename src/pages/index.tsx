@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContestPage = () => {
   return (
-    <div className="min-h-screen bg-white p-8 max-w-4xl mx-auto">
+    <div className="min-h-screen bg-white p-8 max-w-4xl mx-auto text-black">
       <h1 className="text-2xl font-bold mb-8">Win a Luxury Prize of Your Choice!</h1>
       
       <p className="mb-8">
