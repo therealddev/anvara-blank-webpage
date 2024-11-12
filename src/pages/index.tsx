@@ -1,12 +1,24 @@
 import React from 'react';
 
 const ContestPage = () => {
-  const [showRolex, setShowRolex] = React.useState(true);
+  const images = [
+    "/assets/rolex.png",
+    "/assets/rolex2.png",
+    "/assets/rolex3.png",
+    "/assets/rolex4.png",
+    "/assets/bag.png",
+    "/assets/bag2.png",
+    "/assets/bag3.png",
+    "/assets/bag4.png",
+    "/assets/bag5.png"
+  ];
+
+  const [currentIndex, setCurrentIndex] = React.useState(0);
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setShowRolex(prev => !prev);
-    }, 3000);
+      setCurrentIndex(prev => (prev + 1) % images.length);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, []);
@@ -17,8 +29,8 @@ const ContestPage = () => {
       
       <div className="w-full flex justify-center mb-8 h-[400px]">
         <img 
-          src={showRolex ? "/assets/rolex.png" : "/assets/bag.png"}
-          alt={showRolex ? "Rolex Watch" : "Birkin Bag"}
+          src={images[currentIndex]}
+          alt={images[currentIndex].includes('rolex') ? "Rolex Watch" : "Birkin Bag"}
           className="max-w-[300px] h-[400px] object-contain"
         />
       </div>
