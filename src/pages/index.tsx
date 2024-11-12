@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContestPage = () => {
   return (
-    <div className="min-h-screen bg-white p-8 max-w-4xl mx-auto text-black">
+    <div className="min-h-screen bg-white dark:bg-gray-900 p-8 max-w-4xl mx-auto text-black dark:text-white">
       <h1 className="text-2xl font-bold mb-8">Win a Luxury Prize of Your Choice!</h1>
       
       <p className="mb-8">
@@ -12,7 +12,7 @@ const ContestPage = () => {
 
       <h2 className="text-xl font-bold mb-4">How Do I Enter?</h2>
       <ol className="mb-8 list-decimal pl-5 space-y-2">
-        <li>Join Anvara: Sign up for Anvara at <a href="https://dashboard.anvara.io" className="underline">dashboard.anvara.io</a>. It's 100% free, no strings attached! Purchasing an activation does not increase your chances of winning. You must work at an ad agency or on a growth/marketing team at a brand.</li>
+        <li>Join Anvara: Sign up for Anvara at <a href="https://dashboard.anvara.io" className="underline hover:text-gray-600 dark:hover:text-gray-300">dashboard.anvara.io</a>. It's 100% free, no strings attached! Purchasing an activation does not increase your chances of winning. You must work at an ad agency or on a growth/marketing team at a brand.</li>
         <li>Call your Friends: Ask five of your friends or colleagues to sign up for Anvara. To qualify, your friends must work at an ad agency or on a growth/marketing team at a brand in a relevant role to Anvara. (They can't already have an account).</li>
         <li>Complete the Entry Form: Fill out this <a href="https://forms.gle/qgUHEV9G2wjXwxa96" className="underline">quick Google Form</a> with your info so we can confirm your entry.</li>
         <li>Good Luck! Cross Your Fingers, Knock on Wood, Wear your lucky socks, wish at 11:11, and steer clear of ladders.</li>
@@ -120,7 +120,7 @@ const ContestPage = () => {
         <h3 className="font-bold mb-2">Contact Information</h3>
         <p>
           For any questions about the Contest, please contact:{' '}
-          <a href="mailto:info@anvara.com" className="underline">info@anvara.com</a>
+          <a href="mailto:info@anvara.com" className="underline hover:text-gray-600 dark:hover:text-gray-300">info@anvara.com</a>
         </p>
         <p className="mt-4 text-sm">
           This Contest is in no way sponsored, endorsed, administered by, or associated with LinkedIn or any other third-party platform.
