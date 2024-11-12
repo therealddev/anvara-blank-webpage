@@ -1,14 +1,12 @@
 import React from 'react';
 
 const ContestPage = () => {
-  // Add state to control image display
   const [showRolex, setShowRolex] = React.useState(true);
 
-  // Add useEffect for the image toggle
   React.useEffect(() => {
     const interval = setInterval(() => {
       setShowRolex(prev => !prev);
-    }, 3000); // Switch every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -17,21 +15,11 @@ const ContestPage = () => {
     <div className="min-h-screen bg-white dark:bg-gray-900 p-8 max-w-4xl mx-auto text-black dark:text-white">
       <h1 className="text-2xl font-bold mb-8 text-center">Win a Luxury Prize of Your Choice!</h1>
       
-      {/* Updated image container with absolute positioning for fade effect */}
-      <div className="w-full flex justify-center mb-8 relative h-[400px]">
+      <div className="w-full flex justify-center mb-8 h-[400px]">
         <img 
-          src="/assets/rolex.png"
-          alt="Rolex Watch"
-          className={`absolute max-w-[300px] h-[400px] object-contain transition-opacity duration-1000 ${
-            showRolex ? 'opacity-100' : 'opacity-0'
-          }`}
-        />
-        <img 
-          src="/assets/bag.png"
-          alt="Birkin Bag"
-          className={`absolute max-w-[300px] h-[400px] object-contain transition-opacity duration-1000 ${
-            showRolex ? 'opacity-0' : 'opacity-100'
-          }`}
+          src={showRolex ? "/assets/rolex.png" : "/assets/bag.png"}
+          alt={showRolex ? "Rolex Watch" : "Birkin Bag"}
+          className="max-w-[300px] h-[400px] object-contain"
         />
       </div>
 
