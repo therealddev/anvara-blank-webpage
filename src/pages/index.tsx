@@ -3,7 +3,7 @@ import React from 'react';
 const ContestPage = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 p-8 max-w-4xl mx-auto text-black dark:text-white">
-      <h1 className="text-2xl font-bold mb-8">Win a Luxury Prize of Your Choice!</h1>
+      <h1 className="text-2xl font-bold mb-8 text-center">Win a Luxury Prize of Your Choice!</h1>
       
       <p className="mb-8">
         Yes, this is real, and yes, it's happening! We're giving away your choice of a Rolex (no, not the cheap ones), 
